@@ -1,0 +1,37 @@
+@import "./fonts/gotham";
+@import "./fonts/ptsans";
+
+// -- CORES DE TEXTO --
+$text-heading: #ffffff;
+$text-body: #8a959b;
+$text-subheading: #f80d5a;
+$text-caption: #949b99;
+$text-highlight: #d5dbd3;
+$text-overline: #ffffff;
+
+// -- CORES DE FUNDO / DIVS --
+$background-primary: #000000;
+$background-navbar: #202121;
+
+// -- CORES DE BORDAS E DIVISORES --
+$divider: #f80d5a;
+$border-primary: #949b99;
+$border-secondary: #ed145b;
+$border-inverse: #ffffff;
+
+// -- FONTES --
+$font-primary-family: "Gotham HTF Medium", sans-serif;
+$font-secondary-family: "PT Sans Regular", sans-serif;
+
+// -- FONT SIZES --
+$font-size-heading-xl: 110px;
+$font-size-heading-lg: 83px;
+$font-size-heading-md: 55px;
+
+$font-size-subheading: 70px;
+$font-size-overline: 20px;
+$font-size-highlight: 17px;
+
+$font-size-body-lg: 22px;
+$font-size-body-md: 16px;
+$font-size-body-sm: 13px;

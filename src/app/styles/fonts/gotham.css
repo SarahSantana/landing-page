@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Gotham HTF Ultra";
+  src: url("/fonts/gotham/gotham-htf-ultra.woff2") format("woff2"),
+    url("/fonts/gotham/gotham-htf-ultra.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham HTF Black";
+  src: url("/fonts/gotham/gotham-htf-black.woff2") format("woff2"),
+    url("/fonts/gotham/gotham-htf-black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham HTF Bold";
+  src: url("/fonts/gotham/gotham-htf-bold.woff2") format("woff2"),
+    url("/fonts/gotham/gotham-htf-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham HTF Medium";
+  src: url("/fonts/gotham/gotham-htf-medium.woff2") format("woff2"),
+    url("/fonts/gotham/gotham-htf-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham HTF Book";
+  src: url("/fonts/gotham/gotham-htf-book.woff2") format("woff2"),
+    url("/fonts/gotham/gotham-htf-book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham HTF Light";
+  src: url("/fonts/gotham/gotham-htf-light.woff2") format("woff2"),
+    url("/fonts/gotham/gotham-htf-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham HTF Thin";
+  src: url("/fonts/gotham/gotham-htf-thin.woff2") format("woff2"),
+    url("/fonts/gotham/gotham-htf-thin.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
