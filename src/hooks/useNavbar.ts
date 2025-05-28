@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { theme } from "@/app/styles/theme";
 
 const useNavbar = () => {

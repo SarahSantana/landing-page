@@ -27,7 +27,7 @@ $font-secondary-family: "PT Sans Regular", sans-serif;
 
 // -- FONT SIZES --
 $font-size-heading-xl: clamp(2rem, 5.7vw, 6.875rem); //110px;
-$font-size-heading-lg: 83px;
+$font-size-heading-lg: clamp(3rem, 4.3vw, 5.2rem); //83px;
 $font-size-heading-md: 55px;
 
 $font-size-muted-xl: clamp(4rem, 18.2vw, 21.875rem); //350px;
