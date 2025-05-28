@@ -1,5 +1,5 @@
-@import "./fonts/gotham";
-@import "./fonts/ptsans";
+@use "./fonts/gotham" as *;
+@use "./fonts/ptsans" as *;
 
 // -- CORES DE TEXTO --
 $text-heading: #ffffff;
@@ -8,6 +8,7 @@ $text-subheading: #f80d5a;
 $text-caption: #949b99;
 $text-highlight: #d5dbd3;
 $text-overline: #ffffff;
+$text-muted: #0b0c0d;
 
 // -- CORES DE FUNDO / DIVS --
 $background-primary: #000000;
@@ -21,12 +22,15 @@ $border-inverse: #ffffff;
 
 // -- FONTES --
 $font-primary-family: "Gotham HTF Medium", sans-serif;
+$font-primary-family-ultra: "Gotham HTF Ultra", sans-serif;
 $font-secondary-family: "PT Sans Regular", sans-serif;
 
 // -- FONT SIZES --
-$font-size-heading-xl: 110px;
+$font-size-heading-xl: clamp(2rem, 5.7vw, 6.875rem); //110px;
 $font-size-heading-lg: 83px;
 $font-size-heading-md: 55px;
+
+$font-size-muted-xl: clamp(4rem, 18.2vw, 21.875rem); //350px;
 
 $font-size-subheading: 70px;
 $font-size-overline: 20px;

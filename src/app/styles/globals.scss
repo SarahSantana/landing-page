@@ -1,10 +1,11 @@
-@import "theme.scss";
-@import "./fonts/gotham.css";
+@use "theme" as *;
+@use "./fonts/gotham" as *;
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 body {
