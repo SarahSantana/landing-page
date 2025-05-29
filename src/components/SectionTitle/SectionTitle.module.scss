@@ -1,0 +1,19 @@
+@use "../../app/styles/theme.scss" as *;
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer h2 {
+  font-size: $font-size-heading-lg;
+  color: $text-heading;
+  width: 100%;
+}
+
+.titleContainer h5 {
+  font-size: $font-size-body-lg;
+  color: $text-subheading;
+  width: 100%;
+  padding-left: 3px;
+}

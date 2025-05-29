@@ -9,7 +9,7 @@
 
 .firstLine,
 .secondLine {
-  display: inline-block;
+  flex-shrink: 0;
   padding-right: 1rem;
   font-size: $font-size-disabled;
   text-transform: uppercase;
@@ -24,11 +24,9 @@
 .carouselWrapper {
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .carouselTrack {
-  display: inline-block;
-  white-space: nowrap;
+  display: flex;
   will-change: transform;
 }

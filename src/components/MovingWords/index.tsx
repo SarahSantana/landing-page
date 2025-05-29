@@ -11,7 +11,7 @@ const MovingWords: React.FC = () => {
     <div className={styles.mainContainer}>
       <div className={styles.carouselWrapper}>
         <div ref={carouselTrackFirstRef} className={styles.carouselTrack}>
-          {[...Array(4)].map((_, index) => (
+          {[...Array(2)].map((_, index) => (
             <div key={index} className={styles.firstLine}>
               {texts.ptBR.sentences.firstLine}
             </div>
@@ -20,7 +20,7 @@ const MovingWords: React.FC = () => {
       </div>
       <div className={styles.carouselWrapper}>
         <div ref={carouselTrackSecondRef} className={styles.carouselTrack}>
-          {[...Array(4)].map((_, index) => (
+          {[...Array(2)].map((_, index) => (
             <div key={index} className={styles.secondLine}>
               {texts.ptBR.sentences.secondLine}
             </div>
