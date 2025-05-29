@@ -20,10 +20,10 @@
   width: 0%;
   height: 6px;
   background-color: $divider;
-  transition: width 0.5s ease;
+  transition: width 0.2s ease-in;
 }
 
-.navItem:hover .bar {
+.navItem.active .bar {
   width: 30%;
 }
 
@@ -32,9 +32,10 @@
   text-transform: uppercase;
   color: $text-navbarItem;
   line-height: 30px;
-  transition: color 0.4s ease-out;
+  transition: color 0.2s ease;
 }
 
-.navItem:hover .navItemText {
+.navItem:hover .navItemText,
+.navItem.active .navItemText {
   color: $text-navbarItemActive;
 }

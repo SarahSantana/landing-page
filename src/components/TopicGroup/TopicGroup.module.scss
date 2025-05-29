@@ -1,0 +1,15 @@
+@use "../../app/styles/theme.scss" as *;
+
+.title {
+  font-size: $font-size-heading-sm;
+  color: $text-heading;
+  line-height: 30px;
+  letter-spacing: -3%;
+}
+
+.topicsContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  margin-top: 80px;
+}
