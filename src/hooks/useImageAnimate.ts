@@ -7,7 +7,6 @@ const useImageAnimate = () => {
   useEffect(() => {
     const imageObserver = new IntersectionObserver(
       ([entry]) => {
-        console.log("Intersection observed:", entry.isIntersecting);
         if (entry.isIntersecting) {
           setIsImageVisible(true);
           imageObserver.unobserve(entry.target);
@@ -19,7 +18,6 @@ const useImageAnimate = () => {
     if (refImage.current) {
       imageObserver.observe(refImage.current);
     }
-
     return () => {
       if (refImage.current) imageObserver.unobserve(refImage.current);
     };
