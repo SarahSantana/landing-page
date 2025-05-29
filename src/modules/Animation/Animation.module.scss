@@ -1,3 +1,10 @@
 .imageContainer {
   padding-top: 76px;
+  position: relative;
+}
+
+.movingWordsContainer {
+  position: absolute;
+  bottom: -4rem;
+  z-index: 2;
 }
