@@ -6,6 +6,8 @@ export const theme = {
     textCaption: "#949B99",
     textHighlight: "#D5DBD3",
     textOverline: "#ffffff",
+    $textMuted: "#0b0c0d",
+    $textDisabled: "#454C4F",
   },
   background: {
     backgroundPrimary: "#000000",

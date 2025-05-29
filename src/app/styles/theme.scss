@@ -9,6 +9,7 @@ $text-caption: #949b99;
 $text-highlight: #d5dbd3;
 $text-overline: #ffffff;
 $text-muted: #0b0c0d;
+$text-disabled: #454c4f;
 
 // -- CORES DE FUNDO / DIVS --
 $background-primary: #000000;
@@ -27,10 +28,12 @@ $font-secondary-family: "PT Sans Regular", sans-serif;
 
 // -- FONT SIZES --
 $font-size-heading-xl: clamp(2rem, 5.7vw, 6.875rem); //110px;
-$font-size-heading-lg: 83px;
+$font-size-heading-lg: clamp(3rem, 4.3vw, 5.2rem); //83px;
 $font-size-heading-md: 55px;
 
 $font-size-muted-xl: clamp(4rem, 18.2vw, 21.875rem); //350px;
+
+$font-size-disabled: clamp(4rem, 7.5vw, 9rem); //144px;
 
 $font-size-subheading: 70px;
 $font-size-overline: 20px;

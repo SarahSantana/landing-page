@@ -1,0 +1,34 @@
+@use "../../app/styles/theme.scss" as *;
+
+.mainContainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstLine,
+.secondLine {
+  display: inline-block;
+  padding-right: 1rem;
+  font-size: $font-size-disabled;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px $text-disabled;
+}
+
+.secondLine {
+  font-style: italic;
+}
+
+.carouselWrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carouselTrack {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}

@@ -1,6 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const useAnimation = () => {
+const useImageAnimate = () => {
   const refImage = useRef<HTMLDivElement>(null);
   const [isImageVisible, setIsImageVisible] = useState(false);
 
@@ -28,4 +28,4 @@ const useAnimation = () => {
   return { refImage, isImageVisible };
 };
 
-export default useAnimation;
+export default useImageAnimate;

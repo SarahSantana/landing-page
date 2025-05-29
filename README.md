@@ -2,16 +2,16 @@
 
 Desenvolver uma Landing Page que acompanha a identidade visual da FIAP
 
-Figma Desktop:
-https://www.figma.com/design/aAAuhPpxsfmd1Lb18R2qcz/TesteT%C3%A9cnico-Front-end---FIAP?node-id=0-
-1&m=dev&t=mFO4BSPeaJ6Kzc1A-1
-• Figma Mobile:
-https://www.figma.com/design/aAAuhPpxsfmd1Lb18R2qcz/TesteT%C3%A9cnico-Front-end---FIAP?node-id=3-6&p=f&t=mFO4BSPeaJ6Kzc1A-0
-• Recursos (fontes/SVGs/imagens):
-https://drive.google.com/file/d/1iRzYqavjnPc3lkORODeJGkVDK9lgjadv/view?us
-p=drive_link
-• Vídeo demonstrativo da Landing Page:
-https://www.youtube.com/watch?v=SrZDsx6TKf0
+- Figma Desktop:
+  https://www.figma.com/design/aAAuhPpxsfmd1Lb18R2qcz/TesteT%C3%A9cnico-Front-end---FIAP?node-id=0-
+  1&m=dev&t=mFO4BSPeaJ6Kzc1A-1
+- Figma Mobile:
+  https://www.figma.com/design/aAAuhPpxsfmd1Lb18R2qcz/TesteT%C3%A9cnico-Front-end---FIAP?node-id=3-6&p=f&t=mFO4BSPeaJ6Kzc1A-0
+- Recursos (fontes/SVGs/imagens):
+  https://drive.google.com/file/d/1iRzYqavjnPc3lkORODeJGkVDK9lgjadv/view?us
+  p=drive_link
+- Vídeo demonstrativo da Landing Page:
+  https://www.youtube.com/watch?v=SrZDsx6TKf0
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
