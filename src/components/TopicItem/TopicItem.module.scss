@@ -1,8 +1,30 @@
+@use "../../app/styles/theme.scss" as *;
+
 .container {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid $border-inverse;
+  white-space: nowrap;
 }
 
 .topicTitle {
+  font-family: $font-secondary-family;
+  font-size: $font-size-body-lg;
+  color: $text-body;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .description {
+  font-size: $font-size-body-sm;
+  color: $text-body;
+  text-transform: uppercase;
+  line-height: 27px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

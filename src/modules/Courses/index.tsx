@@ -13,6 +13,8 @@ export default function Courses() {
     selectedStudyArea,
     studyAreaTitles,
     selectedNavbarItemIndex,
+    isDisappearCurrentStudyAreaSelected,
+    isAppearNewStudyAreaSelected,
     handleSelectedItemNavbar,
   } = useCourses();
   return (
@@ -29,10 +31,16 @@ export default function Courses() {
             handleItemAction={handleSelectedItemNavbar}
           />
         </div>
-        <TopicGroup
-          title={selectedStudyArea.title}
-          topics={selectedStudyArea.topics}
-        />
+        <div
+          className={`${styles.topicContainer} 
+          ${isDisappearCurrentStudyAreaSelected ? styles.disappear : ""} 
+          ${isAppearNewStudyAreaSelected ? styles.appear : ""}`}
+        >
+          <TopicGroup
+            title={selectedStudyArea.title}
+            topics={selectedStudyArea.topics}
+          />
+        </div>
       </div>
     </section>
   );
