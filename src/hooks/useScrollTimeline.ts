@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 
-import { ScrollDirect } from "@/enum";
+import { ScrollDirect } from "@/enums";
 
 const useScrollTimeline = () => {
   const MAX_SCROLL_SPEED = 3;

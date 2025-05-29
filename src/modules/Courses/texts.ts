@@ -4,7 +4,6 @@ const texts = {
       title: "Cursos",
       subtitle: "Cursos de Curta Duração",
     },
-    navigatorItens: ["Tecnologia", "Inovação", "Negócios"],
   },
 };
 
