@@ -1,0 +1,58 @@
+@use "../../app/styles/theme.scss" as *;
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  font-family: $font-secondary-family;
+  font-size: $font-size-overline;
+  color: $text-caption;
+  line-height: 19px;
+  letter-spacing: 5%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  @media (max-width: $break-point-mobile) {
+    font-size: $font-size-overline-sm-mobile;
+    line-height: 20px;
+  }
+}
+
+.question {
+  font-size: $font-size-overline;
+  color: $text-overline;
+  line-height: 24px;
+  padding: 30px 0 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+
+  @media (max-width: $break-point-mobile) {
+    font-size: $font-size-overline-mobile;
+    line-height: 24px;
+    letter-spacing: -1%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 2px;
+    background-color: $border-primary;
+    transition: width 0.5s ease 0s, background-color 0.1s ease 0.1s;
+  }
+
+  &:hover::before {
+    width: 100%;
+    background-color: $border-secondary;
+  }
+
+  &:hover + .answer {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+}

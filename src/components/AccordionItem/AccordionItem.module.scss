@@ -1,0 +1,61 @@
+@use "../../app/styles/theme.scss" as *;
+
+.accordionItem {
+  width: 100%;
+}
+
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+
+  &.active {
+    border-bottom: 1px solid $border-accordion;
+  }
+}
+
+.title {
+  font-size: $font-size-accordion-title;
+  color: $text-navbarItemActive;
+  line-height: 30px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+}
+
+.accordionTrigger {
+  width: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 59px;
+  border-radius: 50%;
+  border: 1px solid $border-accordion-trigger;
+  cursor: pointer;
+  font-size: $font-size-accordion-trigger;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+
+  &.closed {
+    color: transparent;
+    -webkit-text-stroke: 1px $border-accordion-trigger;
+  }
+
+  &.opened {
+    background-color: $background-accordion-trigger-open;
+    color: $text-accordion-trigger-open;
+  }
+}
+
+.accordionPanel {
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+@use "../../app/styles/theme.scss" as *;
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  padding: 18px 0;
+  border-bottom: 1px solid $border-accordion;
+  white-space: nowrap;
+}
+
+.topicTitle {
+  width: 100%;
+  font-family: $font-secondary-family;
+  font-size: $font-size-accordion-topic-title;
+  color: $text-accordion-topic-title;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  width: 100%;
+  font-size: $font-size-accordion-topic-description;
+  color: $text-accordion-topic-description;
+  text-transform: uppercase;
+  line-height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
