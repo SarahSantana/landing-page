@@ -9,6 +9,10 @@
   font-size: $font-size-heading-lg;
   color: $text-heading;
   width: 100%;
+
+  @media (max-width: $break-point-desktop-sm) {
+    font-size: $font-size-heading-lg-mobile;
+  }
 }
 
 .titleContainer h5 {
@@ -16,4 +20,8 @@
   color: $text-subheading;
   width: 100%;
   padding-left: 3px;
+
+  @media (max-width: $break-point-desktop-sm) {
+    font-size: $font-size-body-lg-mobile;
+  }
 }

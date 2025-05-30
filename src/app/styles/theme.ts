@@ -6,6 +6,8 @@ export const theme = {
     textCaption: "#949B99",
     textHighlight: "#D5DBD3",
     textOverline: "#ffffff",
+    $textNavbarItemActive: "#ffffff",
+    textNavbarItem: "#8a959b",
     $textMuted: "#0b0c0d",
     $textDisabled: "#454C4F",
   },
@@ -19,6 +21,11 @@ export const theme = {
   },
   fonts: {
     primary: "'Gotham HTF Medium', sans-serif",
+    primaryUltra: "Gotham HTF Ultra",
     secondary: "'PT Sans Regular', sans-serif",
+  },
+  breakPoints: {
+    desktopSm: 1024,
+    mobile: 414,
   },
 };

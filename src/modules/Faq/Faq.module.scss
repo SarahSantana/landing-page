@@ -1,0 +1,35 @@
+@use "../../app/styles/theme.scss" as *;
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 356px;
+
+  @media (max-width: $break-point-mobile) {
+    margin-bottom: 100px;
+  }
+}
+
+.content {
+  width: 70%;
+
+  @media (max-width: $break-point-mobile) {
+    width: 80%;
+  }
+}
+
+.questionsContainer {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(250px, 30%, 350px), 1fr)
+  );
+  gap: 32px;
+  width: 100%;
+  margin-top: 126px;
+
+  @media (max-width: $break-point-mobile) {
+    margin-top: 42px;
+  }
+}

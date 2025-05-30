@@ -1,16 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 
 import { coursesInfo, studyAreas } from "@/mocks/Courses";
+import { IAccordionPanelItem } from "@/types/Accordion";
 import { ICourseInfo } from "@/types/Courses";
 
 const useCourses = () => {
-  const INIT_SELECTED_NAVBAR_ITEM_INDEX = 0;
-  const initSelectedArea = coursesInfo[INIT_SELECTED_NAVBAR_ITEM_INDEX];
+  const INIT_SELECTED_ITEM_INDEX = 0;
+  const initSelectedArea = coursesInfo[INIT_SELECTED_ITEM_INDEX];
   const [studyAreaTitles, setStudyAreaTitles] = useState<string[]>([]);
   const [selectedStudyArea, setSelectedStudyArea] =
     useState<ICourseInfo>(initSelectedArea);
+  const [selectedAccordionStudyArea, setSelectedAccordionStudyArea] =
+    useState<IAccordionPanelItem>();
   const [selectedNavbarItemIndex, setSelectedNavbarItemIndex] =
-    useState<number>(INIT_SELECTED_NAVBAR_ITEM_INDEX);
+    useState<number>(INIT_SELECTED_ITEM_INDEX);
   const [
     isDisappearCurrentStudyAreaSelected,
     setIsDisappearCurrentStudyAreaSelected,
@@ -36,6 +39,17 @@ const useCourses = () => {
     }, 1200);
   };
 
+  const handleGetAccordionPanel = (itemIndex: number) => {
+    if (itemIndex === selectedAccordionStudyArea?.id) {
+      setSelectedAccordionStudyArea(undefined);
+      return;
+    }
+    setSelectedAccordionStudyArea({
+      id: itemIndex,
+      topics: coursesInfo[itemIndex].topics,
+    });
+  };
+
   const setStudyAreaTitlesList = () => {
     const titles = studyAreas.map((item) => item.title);
     setStudyAreaTitles(titles);
@@ -54,7 +68,9 @@ const useCourses = () => {
     selectedNavbarItemIndex,
     isDisappearCurrentStudyAreaSelected,
     isAppearNewStudyAreaSelected,
+    selectedAccordionStudyArea,
     handleSelectedItemNavbar,
+    handleGetAccordionPanel,
   };
 };
 

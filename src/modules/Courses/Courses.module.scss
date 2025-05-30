@@ -1,12 +1,22 @@
+@use "../../app/styles/theme.scss" as *;
+
 .mainContainer {
   margin-top: 280px;
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: $break-point-desktop-sm) {
+    margin: 190px 0 98px;
+  }
 }
 
 .content {
   width: 70%;
+
+  @media (max-width: $break-point-mobile) {
+    width: 80%;
+  }
 }
 
 .header {

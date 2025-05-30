@@ -32,6 +32,11 @@
   font-size: $font-size-heading-md;
   text-transform: uppercase;
   color: $text-heading;
+
+  @media (max-width: $break-point-mobile) {
+    font-size: $font-size-heading-md-mobile;
+    line-height: 27px;
+  }
 }
 
 @keyframes scrollText {
